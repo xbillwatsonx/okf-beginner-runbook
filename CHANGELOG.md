@@ -8,3 +8,4 @@
 - Added copy-paste agent prompts.
 - Added examples for concept, index, and log patterns.
 - Added MIT License.
+- Added About, Contact, and Privacy pages.

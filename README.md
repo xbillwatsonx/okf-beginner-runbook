@@ -29,6 +29,9 @@ It is designed to work as a plain downloaded folder. Git is optional.
 - `starter-kit/okf-knowledge-base/` - A small OKF starter bundle you can copy and adapt.
 - `prompts/` - Copy-paste prompts for agents and AI tools.
 - `examples/` - Small examples of OKF-style files.
+- `ABOUT.md` - Project background and purpose.
+- `CONTACT.md` - How to ask questions or suggest improvements.
+- `PRIVACY.md` - Plain privacy note for this static open-source project.
 - `CHANGELOG.md` - Package history.
 - `LICENSE` - MIT License.
 
@@ -57,3 +60,9 @@ The surrounding project files, such as this `README.md`, are distribution materi
 3. Preserve useful existing structure.
 4. Add a light OKF wrapper before attempting a full migration.
 5. Validate non-reserved Markdown files inside the OKF bundle.
+
+## Project Info
+
+- [About](ABOUT.md)
+- [Contact](CONTACT.md)
+- [Privacy](PRIVACY.md)
