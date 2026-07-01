@@ -34,6 +34,14 @@ The body of the file is normal Markdown. That means the knowledge stays readable
 
 In plain English: OKF is a folder of linked notes with a small amount of structure at the top of each note.
 
+## 1A. Optional Obsidian Viewing
+
+You can open an OKF folder in Obsidian as a vault if you want a visual way to browse it.
+
+Obsidian is a free Markdown viewer and note app. Point Obsidian at the OKF folder, and it can render the notes, links, and folder structure visually.
+
+Obsidian is optional. The knowledge base still works as plain Markdown files without it.
+
 ## 2. What OKF Is Good For
 
 OKF is useful when you want knowledge to be readable by humans and usable by AI agents.
@@ -621,6 +629,12 @@ Validation must check:
 
 If an official validator or project validator is available in the user's environment, use it.
 
+This starter repo also includes a tiny dependency-free validator script. From the repo root, run:
+
+```bash
+python3 validate-okf.py starter-kit/okf-knowledge-base
+```
+
 If not, use this simple validation checklist:
 
 ```text
@@ -671,7 +685,7 @@ Use a small routine so the knowledge base stays useful.
 Copy this into your agent:
 
 ```text
-Help me build, inspect, or gradually convert a knowledge base using Open Knowledge Format. First, ask me whether I already have a notes folder, second brain, vault, Drive folder, Git repo, reference folder, project archive, or knowledge base. Ask where it is and whether I want to create a new OKF folder, add an OKF wrapper to what already exists, convert one part of an existing folder, fully migrate it, or only inspect and plan. Do not scan my whole computer. Only inspect folders I approve. Before changing anything, summarize what you found and show me your proposed structure. Preserve useful existing structure unless I approve a change. Do not delete, overwrite, move, or rename files unless I approve. Use OKF-style Markdown files with YAML frontmatter. Make one file per concept when creating new concept files. Use type as the required frontmatter field in every non-reserved .md file. Use index.md for discovery and log.md for change history. Validate the folder before calling it complete.
+Help me build or inspect an Open Knowledge Format knowledge base. First, ask me whether I already have a notes folder, second brain, vault, Drive folder, Git repo, or knowledge base. Ask where it is and whether I want to create a new OKF folder, modify an existing one, or only inspect and plan. Do not scan my whole computer. Only inspect folders I approve. Before changing anything, summarize what you found and show me your proposed structure. Do not delete, overwrite, move, or rename files unless I approve. Use OKF-style Markdown files with YAML frontmatter. Make one file per concept when creating new concept files. Use type as the required frontmatter field in every non-reserved .md file. Use index.md for discovery and log.md for change history. Validate the folder before calling it complete.
 ```
 
 ## 19. Troubleshooting
@@ -852,7 +866,7 @@ Monthly:
 ### Reusable agent prompt
 
 ```text
-Help me build, inspect, or gradually convert a knowledge base using Open Knowledge Format. First ask what I already have and where it is. Do not scan my whole computer. Inspect only approved folders. Before changing anything, summarize what you found, identify useful existing structure to preserve, propose a structure, and ask for approval. Prefer a light OKF wrapper or partial conversion before a full migration unless I request otherwise. Use one Markdown file per concept when creating new concept files. Put YAML frontmatter at the top of every non-reserved .md file. Include a non-empty root-level type field. Use index.md for discovery and log.md for change history. Use portable Markdown links. Validate the folder before calling it complete.
+Help me build or inspect an Open Knowledge Format knowledge base. First, ask me whether I already have a notes folder, second brain, vault, Drive folder, Git repo, or knowledge base. Ask where it is and whether I want to create a new OKF folder, modify an existing one, or only inspect and plan. Do not scan my whole computer. Only inspect folders I approve. Before changing anything, summarize what you found and show me your proposed structure. Do not delete, overwrite, move, or rename files unless I approve. Use OKF-style Markdown files with YAML frontmatter. Make one file per concept when creating new concept files. Use type as the required frontmatter field in every non-reserved .md file. Use index.md for discovery and log.md for change history. Validate the folder before calling it complete.
 ```
 
 ### Troubleshooting guide
@@ -860,7 +874,7 @@ Help me build, inspect, or gradually convert a knowledge base using Open Knowled
 If something feels messy, do not rebuild everything. Ask the agent for a small repair plan:
 
 ```text
-Inspect this OKF folder. Do not change anything yet. Report missing frontmatter, broken links, confusing file names, duplicate concepts, giant files, weak index.md files, missing log entries, and possible privacy issues. Then recommend the smallest safe repair plan.
+Inspect this Open Knowledge Format knowledge base and recommend the smallest safe repair plan. Do not change anything yet. Report missing frontmatter, empty type fields, broken links, confusing file names, duplicate concepts, giant files, weak index.md files, missing log entries, machine-specific paths, and possible privacy issues. Then ask for approval before making any edits.
 ```
 
 ## Inspection Notes
