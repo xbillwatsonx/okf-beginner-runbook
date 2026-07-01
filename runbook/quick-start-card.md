@@ -59,6 +59,7 @@ Reserved files do not need frontmatter. Other `.md` files need frontmatter with 
 - `prompts/build-or-inspect-okf-knowledge-base.md` - Start a new OKF build or inspect an existing folder.
 - `prompts/convert-existing-knowledge-base-to-okf.md` - Convert an existing knowledge base gradually.
 - `prompts/validate-okf-knowledge-base.md` - Check an OKF folder before calling it complete.
+- `prompts/repair-okf-knowledge-base.md` - Inspect and recommend repairs for an OKF folder.
 
 ## Validator
 
