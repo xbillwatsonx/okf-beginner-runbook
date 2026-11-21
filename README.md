@@ -6,6 +6,8 @@ This package helps a person or AI agent create, inspect, or gradually convert a 
 
 Current version: `v0.2.0`
 
+> Want more practical, beginner-friendly runbooks for working with AI agents? Follow Bill on GitHub: [github.com/xbillwatsonx](https://github.com/xbillwatsonx).
+
 ## What This Does
 
 Use this runbook with your agent. The agent asks qualifying questions about your setup and how you want to move forward. Then the agent can build a new knowledge base or modify your existing one to follow Google's OKF format and rules.
@@ -76,6 +78,13 @@ Prefer to watch first? [Watch or download **How to Build an AI Brain in Five Min
 4. Add a light OKF wrapper before attempting a full migration.
 5. Optionally open the folder in Obsidian for visual browsing.
 6. Validate non-reserved Markdown files inside the OKF bundle.
+
+## What to Read Next
+
+If this runbook helped you, these companion packages cover the rest of the beginner path:
+
+1. [Beginner's Guide to Configuring Agents](https://github.com/xbillwatsonx/beginners-guide-to-configuring-agents) - Set up a new AI agent so it actually knows you and your work, before you give it a knowledge base to manage.
+2. [Justfile Beginner Runbook](https://github.com/xbillwatsonx/justfile-beginner-runbook) - Give agents a simple command menu for any project so they stop guessing how to run things.
 
 ## Project Info
 
